@@ -1,4 +1,4 @@
-# movie_getx
+# Movie GetX
 
 To run project:
 1. Open Terminal then move to "root_project/domain" path and type "flutter pub get" (enter) and then "flutter pub run build_runner build --delete-conflicting-outputs" (enter)
