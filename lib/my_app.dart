@@ -32,15 +32,6 @@ class MyApp extends GetView<ThemeController> {
       fallbackLocale: const Locale('en', 'US'),
       initialRoute: AppPages.INITIAL_ROUTE,
       getPages: AppPages.getPages,
-      /*
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: S.delegate.supportedLocales,
-      */
     );
   }
 }

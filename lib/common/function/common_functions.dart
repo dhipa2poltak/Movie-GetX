@@ -21,7 +21,7 @@ void showSnackBar(String title, String message) {
           onPressed: () {
             Get.back();
           },
-          child: const Text('OK')
+          child: Text('ok'.tr)
       )
   );
 }

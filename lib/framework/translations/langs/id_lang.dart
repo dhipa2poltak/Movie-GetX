@@ -8,5 +8,6 @@ const Map<String, String> id_lang = {
   "review" : "Ulasan",
   "no_review_available" : "Belum ada ulasan",
   "loading" : "memuat...",
-  "error" : "Kesalahan"
+  "error" : "Kesalahan",
+  "ok": "Oke"
 };

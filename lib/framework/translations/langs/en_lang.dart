@@ -8,5 +8,6 @@ const Map<String, String> en_lang = {
   "review" : "Review",
   "no_review_available" : "Currently no review available",
   "loading" : "loading...",
-  "error": "Error"
+  "error": "Error",
+  "ok": "OK"
 };
