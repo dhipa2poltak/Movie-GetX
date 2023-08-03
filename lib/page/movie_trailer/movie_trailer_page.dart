@@ -50,33 +50,36 @@ class MovieTrailerPage extends GetView<MovieTrailerController> {
       ),
     );
 
-    return YoutubePlayerBuilder(
-        onExitFullScreen: () {
-          exitFullScreen();
-        },
-        player: YoutubePlayer(
-          controller: controller,
-          showVideoProgressIndicator: true,
-          bottomActions: [
-            CurrentPosition(),
-            ProgressBar(isExpanded: true),
+    return Scaffold(
+        appBar: buildAppBar(),
+        body: YoutubePlayerBuilder(
+            onExitFullScreen: () {
+              exitFullScreen();
+            },
+            player: YoutubePlayer(
+              controller: controller,
+              showVideoProgressIndicator: true,
+              bottomActions: [
+                CurrentPosition(),
+                ProgressBar(isExpanded: true),
 
-          ],
-        ),
-        builder: (context, player) {
-          return Stack(
-            children: <Widget>[
-              Container(
-                width: double.infinity,
-                height: double.infinity,
-                color: Colors.black,
-              ),
-              Center(
-                  child: player
-              )
-            ],
-          );
-        }
+              ],
+            ),
+            builder: (context, player) {
+              return Stack(
+                children: <Widget>[
+                  Container(
+                    width: double.infinity,
+                    height: double.infinity,
+                    color: Colors.black,
+                  ),
+                  Center(
+                      child: player
+                  )
+                ],
+              );
+            }
+        )
     );
   }
 }
